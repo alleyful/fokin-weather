@@ -74,11 +74,11 @@ export default function Weather({ temp, condition }) {
       <StatusBar barStyle="light-content" />
       <View style={styles.halfContainer}>
       <MaterialCommunityIcons
-          size={96}
-          name={weatherOptions[condition].iconName}
-          color="white"
-        />
-        <Text style={styles.temp}>{temp}°</Text>
+        size={96}
+        name={weatherOptions[condition].iconName}
+        color="white"
+      />
+      <Text style={styles.temp}>{temp}°</Text>
       </View>
       <View style={styles.textContainer}>
         <Text style={styles.title}>{weatherOptions[condition].title}</Text>
@@ -91,19 +91,19 @@ export default function Weather({ temp, condition }) {
 }
 
 Weather.propTypes = {
-    temp: PropTypes.number.isRequired,
-    condition: PropTypes.oneOf([
-      "Thunderstorm",
-      "Drizzle",
-      "Rain",
-      "Snow",
-      "Atmosphere",
-      "Clear",
-      "Clouds",
-      "Haze",
-      "Mist",
-      "Dust"
-    ]).isRequired
+  temp: PropTypes.number.isRequired,
+  condition: PropTypes.oneOf([
+    "Thunderstorm",
+    "Drizzle",
+    "Rain",
+    "Snow",
+    "Atmosphere",
+    "Clear",
+    "Clouds",
+    "Haze",
+    "Mist",
+    "Dust"
+  ]).isRequired
 };
 
 const styles = StyleSheet.create({
